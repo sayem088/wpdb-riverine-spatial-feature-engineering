@@ -1,0 +1,38 @@
+========================================================================
+H1 MULTI-PARAMETER BONFERRONI TEST REPORT
+========================================================================
+Model:      Linear upstream distance decay (1 - d/5.0 km)
+Stations:   7 core (JRC Automated Skeleton Extraction)
+Parameters: 10 pre-declared - BOD, COD, DO, pH, TDS, EC, SS, Turbidity, Chloride, Total Alkalinity
+alpha Bonferroni: 0.05 / 10 = 0.0050
+========================================================================
+
+STATION EXPOSURES (Linear 5km Decay):
+  MIRPUR_BRIDGE       : 16.117019
+  BOSILA_BRIDGE       : 20.658882
+  HAZARIBAGH          : 22.352887
+  SATMASJID_ROAD      : 21.833725
+  CHADNIGHAT          : 24.541536
+  BCFB                : 20.154059
+  FATULLAH            : 18.213087
+
+========================================================================
+COMPLETE 10-PARAMETER CORRELATION RESULTS
+========================================================================
+       parameter  n_stations  pearson_r  r_squared  p_value  sig_uncorrected  sig_bonferroni
+             BOD           7   0.445524   0.198491 0.316428            False           False
+             COD           7   0.093327   0.008710 0.842253            False           False
+              DO           7  -0.652128   0.425270 0.112427            False           False
+              pH           7  -0.322066   0.103727 0.481153            False           False
+             TDS           7   0.670466   0.449524 0.099287            False           False
+              EC           7   0.620656   0.385214 0.136947            False           False
+              SS           7   0.145555   0.021186 0.755507            False           False
+       Turbidity           7  -0.040980   0.001679 0.930488            False           False
+        Chloride           7   0.543013   0.294863 0.207819            False           False
+Total Alkalinity           7   0.764636   0.584668 0.045261             True           False
+
+========================================================================
+SCIENTIFIC CONCLUSION
+========================================================================
+Zero parameters survived Bonferroni correction (p < 0.0050).
+The null hypothesis for H1 cannot be rejected under strict multiple-comparisons control.

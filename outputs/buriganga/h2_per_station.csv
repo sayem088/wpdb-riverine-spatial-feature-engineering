@@ -1,0 +1,8 @@
+station_id,corridor_class,buffer_200m_class,buffer_500m_class
+MIRPUR_BRIDGE,industrial_built,industrial_built,industrial_built
+BOSILA_BRIDGE,industrial_built,industrial_built,industrial_built
+HAZARIBAGH,industrial_built,mixed_land,industrial_built
+SATMASJID_ROAD,industrial_built,industrial_built,industrial_built
+CHADNIGHAT,industrial_built,industrial_built,industrial_built
+BCFB,industrial_built,industrial_built,industrial_built
+FATULLAH,industrial_built,industrial_built,industrial_built

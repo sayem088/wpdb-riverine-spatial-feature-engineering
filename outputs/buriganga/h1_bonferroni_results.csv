@@ -1,0 +1,11 @@
+parameter,n_stations,pearson_r,r_squared,p_value,sig_uncorrected,sig_bonferroni
+BOD,7,0.445524,0.198491,0.316428,False,False
+COD,7,0.093327,0.00871,0.842253,False,False
+DO,7,-0.652128,0.42527,0.112427,False,False
+pH,7,-0.322066,0.103727,0.481153,False,False
+TDS,7,0.670466,0.449524,0.099287,False,False
+EC,7,0.620656,0.385214,0.136947,False,False
+SS,7,0.145555,0.021186,0.755507,False,False
+Turbidity,7,-0.04098,0.001679,0.930488,False,False
+Chloride,7,0.543013,0.294863,0.207819,False,False
+Total Alkalinity,7,0.764636,0.584668,0.045261,True,False

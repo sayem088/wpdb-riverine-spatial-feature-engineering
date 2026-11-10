@@ -42,7 +42,7 @@ CENTERLINE_PATH = os.path.join(OUT_DIR, "centerline_shitalakhya.geojson")
 SNAPPED_PATH    = os.path.join(OUT_DIR, "stations_shitalakhya_snapped.csv")
 TIF_PATH        = os.path.join(CACHE_DIR, "jrc_shitalakhya.tif")
 
-GEE_PROJECT = "sundarban-489216"
+GEE_PROJECT = os.environ.get("EE_PROJECT", os.environ.get("GEE_PROJECT", None))
 
 STATIONS = {
     "PORT_ROAD":         (23.619368, 90.507349),
@@ -101,7 +101,10 @@ def nearest_node(G_nodes_arr, transform, lat, lon):
 def main():
     if not os.path.exists(TIF_PATH):
         print("Initializing Google Earth Engine...")
-        ee.Initialize(project=GEE_PROJECT)
+        if GEE_PROJECT:
+            ee.Initialize(project=GEE_PROJECT)
+        else:
+            ee.Initialize()
         jrc = ee.Image("JRC/GSW1_4/GlobalSurfaceWater").select("occurrence")
 
         lats_s = [v[0] for v in STATIONS.values()]

@@ -48,7 +48,7 @@ VALIDATION_PATH   = os.path.join(OUT_DIR, "turag_upstream_validation.json")
 TIF_MAIN_PATH     = os.path.join(CACHE_DIR, "jrc_main_buriganga.tif")
 TIF_UPSTREAM_PATH = os.path.join(CACHE_DIR, "jrc_upstream_gt20.tif")
 
-GEE_PROJECT = "sundarban-489216"
+GEE_PROJECT = os.environ.get("EE_PROJECT", os.environ.get("GEE_PROJECT", None))
 JOIN_TOLERANCE_M = 50.0
 
 TURAG_WAYPOINTS = [
@@ -134,7 +134,10 @@ def nearest_node(G_nodes_arr, transform, lat, lon):
 def main():
     if not (os.path.exists(TIF_MAIN_PATH) and os.path.exists(TIF_UPSTREAM_PATH)):
         print("Initializing Google Earth Engine...")
-        ee.Initialize(project=GEE_PROJECT)
+        if GEE_PROJECT:
+            ee.Initialize(project=GEE_PROJECT)
+        else:
+            ee.Initialize()
         jrc = ee.Image("JRC/GSW1_4/GlobalSurfaceWater").select("occurrence")
 
         lats_s = [v[0] for v in STATIONS.values()]

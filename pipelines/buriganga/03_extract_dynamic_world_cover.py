@@ -32,7 +32,7 @@ CL_PATH    = os.path.join(OUT_DIR, "centerline.geojson")
 SNAP_PATH  = os.path.join(OUT_DIR, "stations_snapped.csv")
 OUT_CSV    = os.path.join(OUT_DIR, "land_cover_distance_resolved.csv")
 
-GEE_PROJECT     = "sundarban-489216"
+GEE_PROJECT     = os.environ.get("EE_PROJECT", os.environ.get("GEE_PROJECT", None))
 BIN_SIZE_M      = 100
 MAX_UPSTREAM_M  = 5000
 CORRIDOR_M      = 300
@@ -50,7 +50,10 @@ CORE_STATIONS = [
 
 def main():
     print("Initializing Google Earth Engine...")
-    ee.Initialize(project=GEE_PROJECT)
+    if GEE_PROJECT:
+        ee.Initialize(project=GEE_PROJECT)
+    else:
+        ee.Initialize()
 
     with open(CL_PATH) as f:
         gj = json.load(f)

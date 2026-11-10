@@ -30,7 +30,7 @@ OUT_DIR    = os.path.join(REPO_ROOT, "outputs", "buriganga")
 LC_CSV     = os.path.join(OUT_DIR, "land_cover_distance_resolved.csv")
 SNAP_CSV   = os.path.join(OUT_DIR, "stations_snapped.csv")
 
-GEE_PROJECT     = "sundarban-489216"
+GEE_PROJECT     = os.environ.get("EE_PROJECT", os.environ.get("GEE_PROJECT", None))
 CORRIDOR_KM     = 1.0
 BUILT_THRESHOLD = 0.70
 
@@ -41,7 +41,10 @@ CORE_STATIONS = [
 
 def main():
     print("Initializing Google Earth Engine...")
-    ee.Initialize(project=GEE_PROJECT)
+    if GEE_PROJECT:
+        ee.Initialize(project=GEE_PROJECT)
+    else:
+        ee.Initialize()
 
     df_lc   = pd.read_csv(LC_CSV)
     df_snap = pd.read_csv(SNAP_CSV)

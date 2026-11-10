@@ -12,24 +12,6 @@ This repository provides the official implementation, datasets, pre-computed spa
 > *"Water Pixel Dilution Bias: A Systematic Measurement Error in Riverine Spatial Feature Engineering,"*  
 > **11th IEEE Asia-Pacific Conference on Computer Science and Data Engineering (IEEE CSDE 2026)**, Cox's Bazar, Bangladesh, 2026.
 
----
-
-## 🎖️ Conference Acceptance & Evaluation Notice
-
-> [!IMPORTANT]
-> **Notice for SPARRSO Evaluation Committee:**  
-> This repository has been prepared and made accessible for the technical evaluation and viva assessment by the **Bangladesh Space Research and Remote Sensing Organization (SPARRSO)**.  
-> 
-> * **Conference Status:** This research has been formally accepted for presentation and inclusion in the conference proceedings of **IEEE CSDE 2026** (Paper ID: `ieee-csde_3561`), scheduled for **1–3 November 2026**.
-> * **Copyright Notice:** In accordance with IEEE policy, the conference manuscript and proceedings are subject to IEEE copyright (© 2026 IEEE). The accompanying source code, spatial pipelines, and reproducible feature engineering algorithms are authored by the researchers and released under the [MIT License](LICENSE) for academic review, recruitment evaluation, and research verification.
-
-<p align="center">
-  <img src="confirmation.png" alt="IEEE CSDE 2026 Acceptance Confirmation" width="850"/>
-  <br>
-  <em>Official IEEE CSDE 2026 Acceptance Notification (Paper ID: ieee-csde_3561)</em>
-</p>
-
----
 
 ## 📌 Abstract & Problem Formulation
 
@@ -62,7 +44,6 @@ wpdb_riverine_spatial_feature_engineering/
 ├── requirements.txt                    # Python environment dependencies
 ├── LICENSE                             # MIT License
 ├── .gitignore                          # Standard build and cache exclusions
-├── run_experiments.py                  # Master CLI runner for reproducing paper results
 │
 ├── data/
 │   ├── raw/

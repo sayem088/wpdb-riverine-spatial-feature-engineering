@@ -3,29 +3,33 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Environments
-.env
+# Environments & credentials
+.env*
 .venv
 env/
 venv/
 ENV/
+*.key
+*.pem
+credentials.json
+client_secrets*.json
 
-# Distribution / packaging
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# Local caches & intermediate downloads
+cache/
+*.tif
+*.tiff
+
+# Internal manuscript drafts and presentation guides
+paper_script.md
+Presentation_Script_and_Slide_Guide.md
+*.pptx
+*.pdf
+!figures/*.pdf
+*.docx
+
+# Screenshots and personal logs
+confirmation.png
+*.log
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints

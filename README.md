@@ -141,30 +141,8 @@ If you use this codebase, dataset, or theoretical framework in your research, pl
 }
 ```
 
-
-## 💬 Feedback & Community
-
-Questions, replication feedback, or bug reports are welcome through any of the following channels:
-
-* **Quick Feedback Form (No Login Required):** [Submit Feedback via Google Form](https://forms.gle/GJkDiATXxNVYtudG7)
-* **Bug Reports & Replication Issues:** [GitHub Issues](https://github.com/sayem088/wpdb-riverine-spatial-feature-engineering/issues)
-* **Research Questions & Discussions:** [GitHub Discussions](https://github.com/sayem088/wpdb-riverine-spatial-feature-engineering/discussions)
-
 ---
 
-## 📚 Citation
+## 📄 License
 
-If you use this codebase, dataset, or theoretical framework in your research, please cite our accepted IEEE CSDE 2026 paper (in press; preprint available on ResearchGate):
-
-```bibtex
-@inproceedings{sarker2026water,
-  author    = {Sarker, Md Abu Sayem and Sakib, Syed Nazmus},
-  title     = {Water Pixel Dilution Bias: A Systematic Measurement Error in Riverine Spatial Feature Engineering},
-  booktitle = {Proceedings of the 11th IEEE Asia-Pacific Conference on Computer Science and Data Engineering (IEEE CSDE 2026)},
-  year      = {2026},
-  address   = {Cox's Bazar, Bangladesh},
-  publisher = {IEEE},
-  url       = {https://www.researchgate.net/publication/417659602_Water_Pixel_Dilution_Bias_A_Systematic_Measurement_Error_in_Riverine_Spatial_Feature_Engineering},
-  note      = {Accepted; in press (IEEE Xplore), preprint available on ResearchGate}
-}
-```
+This research codebase and replication package are released under the [MIT License](LICENSE).

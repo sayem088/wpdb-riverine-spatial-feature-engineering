@@ -1,16 +1,17 @@
 # Water-Pixel Dilution Bias (WPDB)
 ### A Systematic Measurement Error in Riverine Spatial Feature Engineering
 
-[![IEEE CSDE 2026](https://img.shields.io/badge/IEEE%20CSDE-2026%20Accepted-blue.svg)](https://www.ieee-csde.org/)
+[![IEEE CSDE 2026](https://img.shields.io/badge/IEEE%20CSDE-2026%20Accepted%20%7C%20Preprint-blue.svg)](https://www.researchgate.net/publication/417659602_Water_Pixel_Dilution_Bias_A_Systematic_Measurement_Error_in_Riverine_Spatial_Feature_Engineering)
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11-green.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-API-orange.svg)](https://earthengine.google.com/)
+[![Feedback](https://img.shields.io/badge/Feedback-Google%20Form-teal.svg)](https://forms.gle/GJkDiATXxNVYtudG7)
 
 This repository provides the official implementation, datasets, pre-computed spatial features, and visualization code for the research paper:
 
 > **Md Abu Sayem Sarker and Syed Nazmus Sakib**,  
 > *"Water Pixel Dilution Bias: A Systematic Measurement Error in Riverine Spatial Feature Engineering,"*  
-> **11th IEEE Asia-Pacific Conference on Computer Science and Data Engineering (IEEE CSDE 2026)**, Cox's Bazar, Bangladesh, 2026.
+> **11th IEEE Asia-Pacific Conference on Computer Science and Data Engineering (IEEE CSDE 2026)**, Cox's Bazar, Bangladesh, 2026 *(Accepted; in press — [Preprint on ResearchGate](https://www.researchgate.net/publication/417659602_Water_Pixel_Dilution_Bias_A_Systematic_Measurement_Error_in_Riverine_Spatial_Feature_Engineering))*.
 
 
 ## 📌 Abstract & Problem Formulation
@@ -112,3 +113,58 @@ wpdb_riverine_spatial_feature_engineering/
 4. **Buffer Sensitivity Quantification**: Direct evidence that standard $200\,\text{m}$ circular buffers misclassify heavily urbanized industrial reaches (e.g., Hazaribagh at $62.10\%$ water misclassified as mixed land use at $26.5\%$ naive built fraction, whereas true non-water density exceeds $88\%$).
 
 ---
+
+## 💬 Feedback & Community
+
+Questions, replication feedback, or bug reports are welcome through any of the following channels:
+
+* **Quick Feedback Form (No Login Required):** [Submit Feedback via Google Form](https://forms.gle/GJkDiATXxNVYtudG7)
+* **Bug Reports & Replication Issues:** [GitHub Issues](https://github.com/sayem088/wpdb-riverine-spatial-feature-engineering/issues)
+* **Research Questions & Discussions:** [GitHub Discussions](https://github.com/sayem088/wpdb-riverine-spatial-feature-engineering/discussions)
+
+---
+
+## 📚 Citation
+
+If you use this codebase, dataset, or theoretical framework in your research, please cite our accepted IEEE CSDE 2026 paper (in press; preprint available on ResearchGate):
+
+```bibtex
+@inproceedings{sarker2026water,
+  author    = {Sarker, Md Abu Sayem and Sakib, Syed Nazmus},
+  title     = {Water Pixel Dilution Bias: A Systematic Measurement Error in Riverine Spatial Feature Engineering},
+  booktitle = {Proceedings of the 11th IEEE Asia-Pacific Conference on Computer Science and Data Engineering (IEEE CSDE 2026)},
+  year      = {2026},
+  address   = {Cox's Bazar, Bangladesh},
+  publisher = {IEEE},
+  url       = {https://www.researchgate.net/publication/417659602_Water_Pixel_Dilution_Bias_A_Systematic_Measurement_Error_in_Riverine_Spatial_Feature_Engineering},
+  note      = {Accepted; in press (IEEE Xplore), preprint available on ResearchGate}
+}
+```
+
+
+## 💬 Feedback & Community
+
+Questions, replication feedback, or bug reports are welcome through any of the following channels:
+
+* **Quick Feedback Form (No Login Required):** [Submit Feedback via Google Form](https://forms.gle/GJkDiATXxNVYtudG7)
+* **Bug Reports & Replication Issues:** [GitHub Issues](https://github.com/sayem088/wpdb-riverine-spatial-feature-engineering/issues)
+* **Research Questions & Discussions:** [GitHub Discussions](https://github.com/sayem088/wpdb-riverine-spatial-feature-engineering/discussions)
+
+---
+
+## 📚 Citation
+
+If you use this codebase, dataset, or theoretical framework in your research, please cite our accepted IEEE CSDE 2026 paper (in press; preprint available on ResearchGate):
+
+```bibtex
+@inproceedings{sarker2026water,
+  author    = {Sarker, Md Abu Sayem and Sakib, Syed Nazmus},
+  title     = {Water Pixel Dilution Bias: A Systematic Measurement Error in Riverine Spatial Feature Engineering},
+  booktitle = {Proceedings of the 11th IEEE Asia-Pacific Conference on Computer Science and Data Engineering (IEEE CSDE 2026)},
+  year      = {2026},
+  address   = {Cox's Bazar, Bangladesh},
+  publisher = {IEEE},
+  url       = {https://www.researchgate.net/publication/417659602_Water_Pixel_Dilution_Bias_A_Systematic_Measurement_Error_in_Riverine_Spatial_Feature_Engineering},
+  note      = {Accepted; in press (IEEE Xplore), preprint available on ResearchGate}
+}
+```
